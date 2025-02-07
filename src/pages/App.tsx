@@ -46,7 +46,7 @@ function App() {
         </motion.div>
 
         {/* Features Section */}
-        <div className="flex flex-col gap-14 lg:gap-[60px] gap-x-20">
+        <div className="flex flex-col gap-14 lg:gap-80">
           {[
             {
               title: "Never see one of these screens again",

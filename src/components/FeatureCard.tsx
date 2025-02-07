@@ -40,7 +40,7 @@ export const FeatureCard = ({
       </div>
 
       {/* Desktop Screens */}
-      <div className="invisible lg:visible w-full relative">
+      <div className="invisible lg:visible w-full absolute top-0 lg:relative">
         {/* Video Container */}
         <div className="flex items-center justify-center max-w-xs mx-auto w-full">
           {children || <div className="h-40 w-full bg-gray-200 rounded-2xl" />}
