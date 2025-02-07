@@ -3,7 +3,6 @@ import bluechain from "../assets/bluechain.svg";
 import PreviewBox from "../components/PreviewBox";
 import Waitlist from "../components/Waitlist";
 import {
-  animate,
   AnimatePresence,
   motion,
   useMotionValue,
