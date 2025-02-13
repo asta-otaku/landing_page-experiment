@@ -13,7 +13,7 @@ export const FeatureCard = ({
 }: FeatureCardProps) => {
   const isEven = index % 2 === 0;
   return (
-    <div className="w-[300px] lg:max-w-screen-2xl mx-auto lg:w-full rounded-3xl bg-[#EBEBEB] lg:bg-white max-h-[480px] lg:max-h-fit">
+    <div className="w-[300px] lg:max-w-screen-[1800px] mx-auto lg:w-full rounded-3xl bg-[#EBEBEB] lg:bg-white max-h-[480px] lg:max-h-fit">
       {/* Mobile Screens */}
       <div className="flex flex-col max-w-xs w-full lg:hidden h-fit">
         {/* Description Container */}
@@ -49,14 +49,14 @@ export const FeatureCard = ({
         {/* Description Container */}
         <div
           className={`flex flex-col justify-center items-center gap-3 absolute top-1/2 transform -translate-y-1/2 ${
-            isEven ? "left-[5%]" : "right-[5%]"
+            isEven ? "-left-0 xl:left-[5%]" : "-right-0 xl:right-[5%]"
           }`}
         >
           <h3 className="self-stretch text-[#191919] font-[Helvetica_Neue] text-[22px] leading-[28px] tracking-[-0.55px]">
             {title}
           </h3>
           <p
-            className="self-stretch text-[#7E7E7E] font-[Helvetica_Neue] text-[17px] leading-[22px] tracking-[-0.408px]"
+            className="self-stretch text-[#7E7E7E] font-[Helvetica_Neue] text-[17px] leading-[22px] tracking-[-0.408px] max-w-[340px] xl:max-w-full"
             style={{ fontFeatureSettings: "'case' on" }}
           >
             {caption}
